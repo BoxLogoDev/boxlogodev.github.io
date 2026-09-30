@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<title>몸스탯 개인정보 처리방침</title>
+<meta name="description" content="몸스탯 앱은 개인정보를 개발자에게 보내지 않아요. 기록·사진·설정은 사용자의 iPhone에만 저장돼요.">
+<link rel="canonical" href="https://boxlogodev.github.io/momstat/privacy/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="몸스탯 개인정보 처리방침">
+<meta property="og:description" content="앱은 개인정보를 개발자에게 보내지 않아요. 기록은 사용자의 iPhone에만 저장돼요.">
+<meta property="og:url" content="https://boxlogodev.github.io/momstat/privacy/">
+<style>
+  :root {
+    --paper: #F6F3EE;
+    --paper-deep: #EFEAE1;
+    --card: #FFFDF9;
+    --ink: #3F362D;
+    --sub: #6B6157;
+    --line: #E6DFD3;
+    --link: #AD4038;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    -webkit-font-smoothing: antialiased;
+  }
+  .stripe {
+    height: 5px;
+    background: linear-gradient(90deg, #F2877A 0 33.4%, #75ABE0 33.4% 66.7%, #E8B34A 66.7% 100%);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  .back { font-size: 0.9rem; }
+  .mark {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.3rem 0.7rem;
+    border: 1.5px solid var(--ink);
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+  h1 { margin: 1.25rem 0 0.5rem; font-size: 1.75rem; line-height: 1.35; letter-spacing: -0.02em; }
+  .meta { margin: 0; color: var(--sub); font-size: 0.925rem; }
+  section { margin-top: 2.5rem; }
+  h2 {
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+  h3 { margin: 1.1rem 0 0.3rem; font-size: 1rem; line-height: 1.5; }
+  p { margin: 0.5rem 0; }
+  ul, ol { margin: 0.5rem 0; padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 4px; }
+  .card {
+    margin-top: 1.5rem;
+    padding: 1rem 1.125rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--card);
+    box-shadow: 0 1px 2px rgba(74, 64, 54, 0.05);
+  }
+  .card > :first-child { margin-top: 0; }
+  .card > :last-child { margin-bottom: 0; }
+  .note {
+    margin-top: 1rem;
+    padding: 1rem 1.125rem;
+    border-radius: 12px;
+    background: var(--paper-deep);
+    color: var(--sub);
+    font-size: 0.925rem;
+  }
+  .note > :first-child { margin-top: 0; }
+  .note > :last-child { margin-bottom: 0; }
+  dl { margin: 0.75rem 0 0; }
+  dt { margin-top: 0.85rem; font-weight: 700; }
+  dt:first-child { margin-top: 0; }
+  dd { margin: 0.15rem 0 0; color: var(--sub); }
+  .path { font-weight: 600; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--sub);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"></div>
+<div class="wrap">
+  <header>
+    <a class="back" href="../">← 몸스탯 지원으로 돌아가기</a><br>
+    <span class="mark">몸스탯</span>
+    <h1>개인정보 처리방침</h1>
+    <p class="meta">시행일: 2026년 10월 1일 (2026-10-01) · 몸스탯 버전 1.0 기준</p>
+
+    <div class="card">
+      <h3>한눈에 보기</h3>
+      <ul>
+        <li>앱을 통해서는 개발자가 어떤 개인정보도 수집하지 않아요. 개발자 서버가 없어요.</li>
+        <li>기록·사진·설정은 사용자의 iPhone 안에만 저장돼요.</li>
+        <li>계정, 로그인, 광고, 분석 도구, 추적이 없어요.</li>
+        <li>Apple 건강의 정보는 읽기만 하고, 이 iPhone 밖으로 내보내지 않아요.</li>
+        <li>개발자가 받는 정보는 사용자가 직접 보낸 문의 메일뿐이에요(14번).</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="s1">
+      <h2 id="s1">1. 이 방침이 다루는 범위</h2>
+      <p>이 방침은 iPhone 앱 ‘몸스탯’(이하 ‘앱’)에 적용돼요. 앱은 개인 개발자(이하 ‘개발자’)가 만들어 한국 App Store에서 제공해요. 앱이 어떤 정보를 어디에 저장하고, 사용자가 그것을 어떻게 지울 수 있는지 설명해요.</p>
+      <p>이 안내 페이지와 지원 페이지는 GitHub Pages에서 제공돼요. 페이지를 열 때 생기는 접속 기록(IP 주소 등)은 GitHub이 자체 방침에 따라 처리하고, 개발자는 그 기록을 받지 않아요. 페이지에는 분석 도구나 쿠키를 넣지 않았어요.</p>
+    </section>
+
+    <section aria-labelledby="s2">
+      <h2 id="s2">2. 수집하는 정보</h2>
+      <p><strong>앱을 통해서는 개발자가 어떤 개인정보도 수집하거나 보관하지 않아요.</strong> 예외는 사용자가 직접 보낸 문의 메일뿐이에요(14번).</p>
+      <ul>
+        <li>앱은 기록, 사진, 설정을 개발자나 다른 누구에게도 전송하지 않아요. 개발자가 운영하는 서버가 없어요.</li>
+        <li>계정, 회원가입, 로그인이 없어요. 앱은 이름·메일 주소·전화번호를 묻지 않아요.</li>
+        <li>분석 도구, 광고, 외부 개발 도구(SDK)를 넣지 않았어요.</li>
+        <li>사용자를 추적하지 않고, 광고 식별자나 여러 앱에 걸친 식별자를 쓰지 않아요.</li>
+        <li>위치 정보, 연락처, 마이크를 쓰지 않아요.</li>
+      </ul>
+      <p>그래서 개발자는 사용자의 기록을 볼 수 없고, 누가 앱을 쓰는지도 알 수 없어요.</p>
+      <div class="note">
+        <p>앱의 구매와 결제는 Apple의 App Store가 처리해요. 개발자는 구매한 사람의 이름이나 결제 정보를 받지 않아요. Apple은 개발자에게 판매·다운로드 수 같은 통계를 제공하고, 사용자가 iPhone에서 앱 개발자와 진단 정보를 공유하도록 켜 둔 경우에는 앱이 멈춘 상황에 대한 진단 정보도 제공해요. 이 정보는 Apple이 개인을 알아볼 수 없는 형태로 제공해요.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="s3">
+      <h2 id="s3">3. 기기에 저장되는 정보</h2>
+      <p>아래 정보는 사용자가 직접 입력하거나 허용했을 때, 사용자의 iPhone 안 몸스탯 앱의 저장 공간에만 저장돼요.</p>
+      <dl>
+        <dt>식사 기록</dt>
+        <dd>날짜, 기록한 시각, 끼니, 사진 한 장(선택), 메뉴 이름(선택)</dd>
+        <dt>영양제 기록</dt>
+        <dd>사용자가 직접 등록한 루틴 이름, 체크한 날짜와 기록한 시각. 병 라벨 사진은 루틴 이름을 맞춰 보는 데에만 쓰고 저장하지 않아요.</dd>
+        <dt>운동 기록</dt>
+        <dd>날짜, 기록한 시각, 운동 이름, 시간(분), 강도</dd>
+        <dt>수면 기록</dt>
+        <dd>날짜, 기록한 시각, 잔 시간, 잠의 질</dd>
+        <dt>기록할 때의 목표</dt>
+        <dd>각 기록에는 그때 정해 둔 목표 값이 함께 저장돼요. 지난 날의 게임 수치를 계산하는 데 써요.</dd>
+        <dt>목표와 설정</dt>
+        <dd>내 호칭, 캐릭터 이름, 목표(수면·운동·끼니·걸음), 잠금 사용 여부, 저장할 때 소리·진동 사용 여부, 앱을 처음 연 날, Apple 건강 연결 여부와 연결한 날·마지막으로 가져온 시각</dd>
+        <dt>게임 진행</dt>
+        <dd>HP·MP·EXP와 3대, 레벨, 캐릭터 종류, 배지. 위 기록에서 계산한 게임 수치예요.</dd>
+        <dt>Apple 건강에서 읽은 하루 합계</dt>
+        <dd>사용자가 연결했을 때만 저장돼요. 4번 항목에서 자세히 설명해요.</dd>
+      </dl>
+      <p>스탯은 기록을 게임 수치로 바꾼 것이고, 건강 상태를 평가한 값이 아니에요.</p>
+    </section>
+
+    <section aria-labelledby="s4">
+      <h2 id="s4">4. Apple 건강에서 읽는 정보</h2>
+      <p>Apple 건강 연결은 선택이에요. 사용자가 앱의 설정에서 직접 연결하고, iOS의 권한 창에서 허용한 항목만 읽어요.</p>
+      <h3>읽는 항목</h3>
+      <ul>
+        <li>수면</li>
+        <li>운동(운동 시간만 사용)</li>
+        <li>걸음 수</li>
+      </ul>
+      <p>읽기 전용이에요. 앱은 Apple 건강에 아무것도 쓰지 않아요.</p>
+      <h3>용도</h3>
+      <p>게임 수치를 계산하고 기록 탭에 보여 주는 데에만 써요. 수면과 걸음은 HP에, 운동 시간은 EXP에 반영돼요.</p>
+      <p>Apple 건강의 수면·운동·걸음 기록을 읽어 iPhone 안에서 하루 합계로 계산하고, 그 합계만 저장해요. 운동은 시간만 써요. 연결하면 최근 30일(앱을 오래 열지 않았다면 최대 60일) 합계를 가져와 기록 탭에 보여 주고, 점수에는 연결한 날부터의 합계만 들어가요.</p>
+      <h3>보관</h3>
+      <ul>
+        <li>읽은 합계는 이 iPhone 안의 별도 저장소에만 보관해요.</li>
+        <li>iCloud에 저장하지 않고, iCloud 백업과 컴퓨터 백업에서도 제외해요.</li>
+        <li>개발자나 제3자에게 전송하지 않아요.</li>
+      </ul>
+      <h3>하지 않는 것</h3>
+      <ul>
+        <li>광고나 마케팅에 쓰지 않아요.</li>
+        <li>판매하거나 제3자에게 제공하지 않아요.</li>
+        <li>건강 상태를 진단하거나 평가하는 데 쓰지 않아요.</li>
+      </ul>
+      <h3>지우기</h3>
+      <p>앱의 <span class="path">설정 &gt; Apple 건강 &gt; 연결 끊기</span>를 누르면 가져온 합계가 앱에서 지워지고, 앱은 그 뒤로 Apple 건강을 읽지 않아요. 건강 앱에 있는 원래 기록은 그대로예요. 읽기 권한 자체는 건강 앱에서 꺼요(11번).</p>
+    </section>
+
+    <section aria-labelledby="s5">
+      <h2 id="s5">5. 카메라와 사진</h2>
+      <ul>
+        <li>카메라 권한은 식사 기록 사진과 영양제 병 라벨을 찍을 때에만 써요.</li>
+        <li>식사 사진은 크기를 줄여 이 iPhone 안 몸스탯 앱의 저장 공간에만 저장해요. 개발자나 제3자에게 전송하지 않아요.</li>
+        <li>영양제 병 사진은 루틴 이름을 맞춰 보는 데에만 쓰고 저장하지 않아요.</li>
+        <li>저장한 사진은 iCloud에 저장하지 않고, iCloud 백업과 컴퓨터 백업에서도 제외해요.</li>
+        <li>앱은 사진 보관함 접근 권한을 요청하지 않고, 찍은 사진을 사진 앱에 따로 저장하지 않아요.</li>
+        <li>카메라 권한을 허용하지 않아도 사진 없이 기록할 수 있어요.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="s6">
+      <h2 id="s6">6. Face ID</h2>
+      <p>앱 잠금은 선택 기능이에요. 켜면 앱을 열거나 다시 돌아올 때 Face ID(기기에 따라 Touch ID)로, 실패하면 기기 암호로 잠금을 풀어요. 인증은 iOS가 처리하고, 앱은 인증에 성공했는지 여부만 전달받아요. 앱은 얼굴이나 지문 같은 생체 정보를 받지도, 저장하지도 않아요.</p>
+      <p>iPhone 암호를 없애면 잠금은 저절로 꺼져요.</p>
+    </section>
+
+    <section aria-labelledby="s7">
+      <h2 id="s7">7. 기기 내 인식 (Apple 기기 내 모델)</h2>
+      <p>사진 속 음식 이름을 알아보는 일과, 병 라벨을 사용자의 루틴 이름과 맞춰 보는 일은 모두 iPhone 안에서 이뤄져요.</p>
+      <ul>
+        <li>Apple Intelligence를 켜 둔 iPhone(iOS 27 이상)에서는 iOS에 포함된 Apple의 기기 내 모델(Foundation Models)을 써요.</li>
+        <li>기기 내 모델을 쓸 수 없거나 모델이 맞는 루틴을 찾지 못하면, 병 라벨의 글자를 Apple의 기기 내 글자 인식(Vision)으로 읽어 루틴 이름과 맞춰 봐요.</li>
+        <li>사진은 인식을 위해 개발자나 외부 서비스로 전송되지 않아요.</li>
+        <li>인식 결과는 음식 이름, 또는 사용자가 등록한 루틴 가운데 일치하는 이름뿐이에요. 추측한 결과라 틀릴 수 있고, 사용자가 고칠 수 있어요. 칼로리나 영양을 계산하거나 평가하지 않아요.</li>
+        <li>기기 내 모델을 쓸 수 없는 기기에서는 식사 사진만 저장되고 메뉴 이름은 사용자가 직접 입력해요. 병 라벨은 글자 인식(Vision)으로만 맞춰 보고, 맞는 루틴이 없으면 사용자가 직접 골라요.</li>
+      </ul>
+      <h3>Siri와 단축어</h3>
+      <p>“몸스탯 영양제 체크”를 실행하면 앱이 iPhone 안에서 오늘의 루틴을 체크해요. 이때도 앱은 기록을 밖으로 보내지 않아요. 음성 요청 자체는 iOS의 Siri가 처리하고, 그 부분은 Apple의 개인정보 처리방침을 따라요.</p>
+    </section>
+
+    <section aria-labelledby="s8">
+      <h2 id="s8">8. 백업</h2>
+      <p>앱에는 기기 사이의 동기화 기능이나 자체 백업 기능이 없어요.</p>
+      <p>다만 사용자가 iPhone 백업(iCloud 백업 또는 컴퓨터 백업)을 켜 두었다면, iOS가 만드는 그 백업에 직접 적은 기록과 설정이 포함될 수 있어요. 이것은 사용자 본인의 백업에 iOS가 저장하는 것이고, 앱이 개발자나 다른 곳으로 보내는 것이 아니에요. 개발자는 그 백업에 접근할 수 없어요.</p>
+      <ul>
+        <li>백업에 포함될 수 있는 것: 직접 적은 기록, 영양제 루틴, 목표와 설정</li>
+        <li>백업에서 제외되는 것: 식사 사진, Apple 건강에서 읽은 합계</li>
+      </ul>
+      <p>그래서 백업으로 다른 iPhone에 복원해도 사진과 Apple 건강 합계는 따라오지 않아요. 기록이 그대로 복원된다고 보장하지도 않아요. 백업을 켜고 끄거나 지우는 일은 사용자가 직접 관리해요. iCloud 백업은 iPhone 설정에서, 컴퓨터 백업은 백업한 컴퓨터에서 관리할 수 있어요.</p>
+    </section>
+
+    <section aria-labelledby="s9">
+      <h2 id="s9">9. 제3자 제공</h2>
+      <p>없어요. 앱은 사용자의 정보를 제3자에게 제공하거나 판매하지 않고, 처리를 외부에 맡기지도 않아요. 앱을 통해 개발자가 받는 정보가 없기 때문에 제공할 수 있는 정보도 없어요.</p>
+      <p>사용자가 직접 보낸 문의 메일도 제3자에게 제공하지 않아요. 메일을 받고 보관하는 방식은 14번에서 설명해요.</p>
+    </section>
+
+    <section aria-labelledby="s10">
+      <h2 id="s10">10. 보관 기간과 삭제 방법</h2>
+      <p>앱의 기록 가운데 개발자가 보관하는 것이 없으므로, 앱 기록에 대한 개발자 쪽의 보관 기간도 없어요. iPhone에 저장된 기록은 사용자가 지우거나 앱을 삭제할 때까지 그 iPhone에 남아요. 문의 메일의 보관 기간은 14번에 적어 두었어요.</p>
+      <dl>
+        <dt>기록 하나만 지우기</dt>
+        <dd>기록 탭에서 지울 기록을 왼쪽으로 밀어 삭제해요. 그 기록의 사진도 함께 지워져요. Apple 건강에서 가져온 합계 줄은 하나씩 지울 수 없고, 연결을 끊으면 한꺼번에 지워져요.</dd>
+        <dt>모든 기록 지우기</dt>
+        <dd>설정 &gt; 모든 기록 지우기를 누르면 모든 기록, 영양제 루틴, 사진이 지워지고 Apple 건강 연결이 끊기며 가져온 합계도 지워져요. 내 호칭, 캐릭터 이름, 목표, 잠금 같은 설정은 남아요. 설정까지 모두 지우려면 앱을 삭제해 주세요.</dd>
+        <dt>Apple 건강 합계만 지우기</dt>
+        <dd>설정 &gt; Apple 건강 &gt; 연결 끊기를 누르면 가져온 합계가 지워져요.</dd>
+        <dt>앱 삭제하기</dt>
+        <dd>iPhone에서 몸스탯을 삭제하면 기기에 저장된 기록, 사진, 설정이 모두 지워져요.</dd>
+      </dl>
+      <div class="note">
+        <p>iPhone 백업을 켜 두었다면 이미 만들어진 백업 안에 직접 적은 기록이 남아 있을 수 있어요. 백업은 앱이 지울 수 없어요. iCloud 백업은 iPhone 설정에서, 컴퓨터 백업은 백업한 컴퓨터에서 직접 관리해 주세요. 예전 백업으로 복원하면 지운 기록이 다시 나타날 수 있어요.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="s11">
+      <h2 id="s11">11. 권한 철회 방법</h2>
+      <p>허용한 권한은 언제든지 iPhone에서 끌 수 있어요. 권한을 꺼도 나머지 기능은 그대로 쓸 수 있어요.</p>
+      <dl>
+        <dt>Apple 건강</dt>
+        <dd>건강 앱 &gt; 오른쪽 위 프로필 &gt; 앱 &gt; 몸스탯, 또는 iPhone 설정 &gt; 개인정보 보호 및 보안 &gt; 건강 &gt; 몸스탯에서 항목별로 꺼요. 이미 가져온 합계까지 지우려면 앱의 설정 &gt; Apple 건강 &gt; 연결 끊기를 눌러 주세요. 앱에서 연결을 끊어도 iOS의 읽기 권한은 그대로 남으니, 권한까지 끄려면 위 경로에서 꺼 주세요.</dd>
+        <dt>카메라</dt>
+        <dd>iPhone 설정 &gt; 개인정보 보호 및 보안 &gt; 카메라에서 몸스탯을 꺼요.</dd>
+        <dt>Face ID</dt>
+        <dd>잠금 자체는 앱의 설정 &gt; 잠금에서 꺼요. iPhone 설정 &gt; Face ID 및 암호 &gt; 다른 앱에서 몸스탯을 끄면 잠금은 그대로 켜져 있고, Face ID 대신 기기 암호로 잠금을 풀게 돼요.</dd>
+        <dt>Siri와 단축어</dt>
+        <dd>iPhone 설정 &gt; 앱 &gt; 몸스탯의 Siri 관련 항목에서 꺼요.</dd>
+      </dl>
+      <p>iOS 버전에 따라 메뉴 이름과 위치가 조금 다를 수 있어요.</p>
+    </section>
+
+    <section aria-labelledby="s12">
+      <h2 id="s12">12. 아동</h2>
+      <p>몸스탯은 아동을 대상으로 만든 앱이 아니에요. 앱은 만 14세 미만 아동을 포함해 누구의 개인정보도 수집하지 않아요.</p>
+    </section>
+
+    <section aria-labelledby="s13">
+      <h2 id="s13">13. 방침 변경 고지</h2>
+      <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 올려요. 정보를 다루는 방식이 달라지는 변경은 시행하기 전에 이 페이지에 미리 알려요.</p>
+    </section>
+
+    <section aria-labelledby="s14">
+      <h2 id="s14">14. 문의</h2>
+      <p>개인정보에 관해 궁금한 점은 개발자에게 메일로 알려 주세요.</p>
+      <p>메일: <a href="mailto:choishiam@gmail.com">choishiam@gmail.com</a></p>
+      <p>문의 메일을 보내면 개발자는 답변을 위해 보낸 분의 메일 주소와 메일 내용을 보게 돼요. 이 정보는 답변하는 데에만 쓰고 다른 곳에 제공하지 않아요.</p>
+      <!-- 운영 메모: 아래 문의 메일 보관 기간(1년)은 개발자가 실제로 지킬 기간인지 확인한 뒤 게시하고, 다르게 정하면 이 문장을 고쳐 주세요. -->
+      <p>메일은 개발자가 쓰는 메일 서비스의 계정으로 받고, 그 메일함에 보관돼요. 답변을 마친 뒤 1년 안에 지우고, 그 전에도 지워 달라고 요청하면 바로 지워요.</p>
+      <p>건강 기록이나 사진 같은 민감한 내용은 메일에 넣지 않으셔도 돼요.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../">몸스탯 지원으로 돌아가기</a></p>
+    <p>© 2026 BoxLogoDev</p>
+  </footer>
+</div>
+</body>
+</html>
