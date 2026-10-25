@@ -6,7 +6,8 @@
   try {
     const r = await fetch('s03-20261025.png', { cache: 'no-store' });
     const buf = await r.arrayBuffer();
-    if (window.opener) window.opener.postMessage({ type: 'momstat-s03', buf }, 'https://appstoreconnect.apple.com', [buf]);
+    const target = window.opener || (window.parent !== window ? window.parent : null);
+    if (target) target.postMessage({ type: 'momstat-s03', buf }, 'https://appstoreconnect.apple.com', [buf]);
     document.body.textContent = '보냈어요 (' + buf.byteLength + ' bytes)';
   } catch (e) { document.body.textContent = '실패: ' + e; }
   setTimeout(() => window.close(), 1500);
