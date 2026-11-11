@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><script>
+(async () => {
+  const to = 'https://appstoreconnect.apple.com';
+  try {
+    const r = await fetch('08-widgets.png', { cache: 'no-store' });
+    if (!r.ok) throw new Error('http ' + r.status);
+    const b = await r.arrayBuffer();
+    parent.postMessage({ kind: 'asc-shot', name: '08-widgets.png', buf: b }, to, [b]);
+  } catch (e) {
+    parent.postMessage({ kind: 'asc-shot-error', msg: String(e) }, to);
+  }
+})();
+</script>
