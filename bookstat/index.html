@@ -14,7 +14,7 @@
 <meta property="og:title" content="북스탯 도움말">
 <meta property="og:description" content="자주 묻는 질문, 기록 지우는 방법, 문의 방법">
 <meta property="og:url" content="https://boxlogodev.github.io/bookstat/">
-<!-- BookStat 1.0 기준. 2026-11-17. -->
+<!-- BookStat 1.1(광고가 들어간 버전) 기준. 2026-11-21 공개. 그 앞의 판은 BookStat 1.0 기준(2026-11-17 공개)이다. -->
 <style>
   :root {
     --paper: #F6F3EC;
@@ -201,10 +201,11 @@
       <div class="card">
         <h3>기록은 이 iPhone에만 있어요</h3>
         <ul>
-          <li>쌓은 것은 이 iPhone에만 저장돼요. 개발자에게 보내지 않아서 개발자도 볼 수 없어요.</li>
-          <li>계정, 회원가입, 로그인이 없어요. 광고와 분석 도구도 없어요.</li>
+          <li>쌓은 것은 이 iPhone에만 저장돼요. 개발자에게 보내지 않아서 개발자도 볼 수 없어요. 광고에도 쓰지 않아요.</li>
+          <li>계정, 회원가입, 로그인이 없어요.</li>
           <li>iCloud 동기화는 없어요. iPhone 백업을 켜 두었다면 백업에는 들어가요.</li>
-          <li>기기 밖으로 나가는 것은 책 번호(ISBN)와 논문 번호(DOI)뿐이에요. 한국 책은 BookStat 중계 서버를 거쳐 국립중앙도서관에, 거기 없거나 다른 나라 책이면 Open Library(openlibrary.org)에 ISBN만 보내요. 논문을 찾을 때는 Crossref(crossref.org)에 DOI만 보내요. 인터넷 요청이라 요청을 받는 곳에는 iPhone의 IP 주소가 보여요. 중계 서버는 누가 물었는지 기록하지 않아요.</li>
+          <li>책이나 논문을 찾을 때 기기 밖으로 나가는 것은 책 번호(ISBN)와 논문 번호(DOI)뿐이에요. 한국 책은 BookStat 중계 서버를 거쳐 국립중앙도서관에, 거기 없거나 다른 나라 책이면 Open Library(openlibrary.org)에 ISBN만 보내요. 논문을 찾을 때는 Crossref(crossref.org)에 DOI만 보내요. 인터넷 요청이라 요청을 받는 곳에는 iPhone의 IP 주소가 보여요. 중계 서버는 누가 물었는지 기록하지 않아요.</li>
+          <li>화면 아래에 배너 광고(Google AdMob)가 있어요. 광고를 보여 주려고 Google의 광고 도구가 기기 식별자, IP 주소, 광고를 본 기록 같은 정보를 Google로 보내요. 추적을 허용하지 않으면 맞춤 광고를 꺼요.</li>
           <li>표지 사진은 이 iPhone에서만 읽고, 저장하지도 보내지도 않아요.</li>
           <li>카메라는 바코드 스캔과 표지 찍기에만 써요.</li>
         </ul>
@@ -328,6 +329,20 @@
       </div>
 
       <div class="card">
+        <h3>광고는 왜 보이고, 무엇을 보내나요?</h3>
+        <p>홈, 책장, 연결 탭의 화면 아래에 배너 광고가 한 줄 보여요. 책 쌓기 화면, 바코드 스캔 화면, 설정에는 광고가 없어요. 쌓은 것이 하나도 없을 때도 나오지 않아요.</p>
+        <ul>
+          <li>광고는 Google AdMob이 보여 줘요. 광고와 분석에 쓰려고 Google의 광고 도구가 기기 식별자, IP 주소와 그것으로 짐작한 지역, 광고를 보고 누른 기록, 앱을 켠 것 같은 사용 기록, 앱 성능과 오류 정보를 Google과 광고 협력사로 보내요.</li>
+          <li>쌓은 책과 글의 기록은 광고에 쓰지 않고 Google에 보내지 않아요.</li>
+          <li>광고가 처음 나올 때 iPhone이 추적을 허용할지 물어요. 허용하지 않아도 모든 기능을 쓸 수 있고, 그때는 맞춤 광고를 꺼요. <span class="path">설정 &gt; 광고 &gt; 설정 열기</span>에서 언제든 바꿀 수 있어요.</li>
+          <li>유럽 경제 지역, 영국, 스위스에서는 광고 전에 동의 화면이 먼저 나오고, <span class="path">설정 &gt; 광고 &gt; 광고 개인정보 선택 바꾸기</span>에서 다시 고를 수 있어요.</li>
+          <li>인터넷이 없으면 광고도 보이지 않아요.</li>
+          <li>알맞지 않거나 보기 불편한 광고를 보면 <span class="path">설정 &gt; 광고 &gt; 보기 불편한 광고 알리기</span>를 누르거나 아래 문의 메일로 알려 주세요.</li>
+        </ul>
+        <p>자세한 것은 <a href="./privacy/#s2">개인정보 처리방침 2번</a>에 있어요.</p>
+      </div>
+
+      <div class="card">
         <h3>인터넷이 없어도 쓸 수 있나요?</h3>
         <p>네. 책과 논문 정보를 찾는 것만 인터넷이 필요해요. 표지 사진 읽기, 직접 입력, 더미와 연결점 보기는 인터넷 없이 돼요.</p>
       </div>
@@ -407,10 +422,11 @@
       <div class="card">
         <h3>Your records stay on this iPhone</h3>
         <ul>
-          <li>What you add is stored only on this iPhone. It is never sent to the developer, so the developer cannot see it.</li>
-          <li>No account, sign-up or login. No ads and no analytics.</li>
+          <li>What you add is stored only on this iPhone. It is never sent to the developer, so the developer cannot see it. It is never used for ads.</li>
+          <li>No account, sign-up or login.</li>
           <li>There is no iCloud sync. If iPhone backup is on, your records are included in your backup.</li>
-          <li>The only things that leave your device are a book number (ISBN) and a paper number (DOI). For a Korean book, BookStat sends only its ISBN to the National Library of Korea through the BookStat relay server; if it isn’t found there, or for books from other countries, only the ISBN goes to Open Library (openlibrary.org). To find a paper, only its DOI goes to Crossref (crossref.org). Because these are internet requests, whoever receives them can see your iPhone’s IP address. The relay server does not record who asked.</li>
+          <li>To find a book or paper, the only things that leave your device are a book number (ISBN) and a paper number (DOI). For a Korean book, BookStat sends only its ISBN to the National Library of Korea through the BookStat relay server; if it isn’t found there, or for books from other countries, only the ISBN goes to Open Library (openlibrary.org). To find a paper, only its DOI goes to Crossref (crossref.org). Because these are internet requests, whoever receives them can see your iPhone’s IP address. The relay server does not record who asked.</li>
+          <li>There is a banner ad (Google AdMob) at the bottom of the screen. To show ads, Google’s ad software sends information such as a device identifier, your IP address and which ads you saw to Google. If you don’t allow tracking, personalized ads are turned off.</li>
           <li>Cover photos are read on this iPhone only. They are never saved or sent.</li>
           <li>The camera is used only to scan barcodes and to photograph covers.</li>
         </ul>
@@ -535,6 +551,20 @@
       </div>
 
       <div class="card">
+        <h3>Why are there ads, and what do they send?</h3>
+        <p>One banner ad is shown at the bottom of the Home, Shelf and Links tabs. There are no ads on the add screen, the barcode scanning screen or Settings, and none while you have added nothing yet.</p>
+        <ul>
+          <li>Ads are served by Google AdMob. For ads and analytics, Google’s ad software sends a device identifier, your IP address and a rough location guessed from it, which ads you saw or tapped, app activity such as launches, and app performance and crash data to Google and its ad partners.</li>
+          <li>Your records of books and other reads are never used for ads and never sent to Google.</li>
+          <li>The first time ads are shown, your iPhone asks whether to allow tracking. Every feature works without it, and personalized ads are then turned off. You can change this at any time from <span class="path">Settings &gt; Ads &gt; Open Settings</span>.</li>
+          <li>In the European Economic Area, the UK and Switzerland, a consent screen is shown before any ad, and you can choose again under <span class="path">Settings &gt; Ads &gt; Change ad privacy choices</span>.</li>
+          <li>Without an internet connection, no ads are shown.</li>
+          <li>If you see an ad that isn’t appropriate, tap <span class="path">Settings &gt; Ads &gt; Report an ad</span> or tell us by email (see Contact below).</li>
+        </ul>
+        <p>Details are in <a href="./privacy/#en-s2">section 2 of the privacy policy</a>.</p>
+      </div>
+
+      <div class="card">
         <h3>Does it work offline?</h3>
         <p>Yes. Only finding book and paper info needs the internet. Reading a cover photo, typing a book in, and viewing the pile and links all work offline.</p>
       </div>
@@ -594,7 +624,7 @@
   </div>
 
   <footer>
-    <p>BookStat 1.0 기준 안내예요. · This guide is for BookStat 1.0.</p>
+    <p>BookStat 1.1 기준 안내예요. · This guide is for BookStat 1.1.</p>
     <p>© 2026 BoxLogoDev</p>
   </footer>
 </div>
